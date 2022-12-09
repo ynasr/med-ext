@@ -19,11 +19,16 @@
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select><br>
-            Age: <input type="number" id="age"><br>
+            Age: <input type="number" id="age" style="width:50px;">
+            <select name="unit" id="unit">
+                <option style="display:none">
+                <option value="years">Years</option>
+                <option value="months">Months</option>
+            </select><br>
             Diagnosis: <input type="text" id="condition0" name="condition">
             Pertinent Medical History #1: <input type="text" id="condition1" name="condition"><br>
             <!-- <span class="remove">Remove</span> -->
-            <span id="add" class="add" style="color:green;padding-bottom: 10px;">Add History</span>
+            <span id="add" class="add" style="color:green;">Add History</span>
             <input type="reset" value="Reset" style="color: red" /><br><br>
             <button id="gen">Gen Note Plans</button>
         </form>
